@@ -1,0 +1,46 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <!-- ImageView untuk gambar di sebelah kiri -->
+    <ImageView
+        android:id="@+id/article_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/miaw_aug"
+        android:scaleType="centerCrop" />
+
+    <!-- LinearLayout untuk menampung judul dan overview -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- TextView untuk judul artikel -->
+        <TextView
+            android:id="@+id/article_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="4dp" />
+
+        <!-- TextView untuk overview artikel -->
+        <TextView
+            android:id="@+id/article_overview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="This is a long description that will be cut off"
+            android:textSize="14sp"
+            android:paddingTop="4dp" />
+
+    </LinearLayout>
+</LinearLayout>
